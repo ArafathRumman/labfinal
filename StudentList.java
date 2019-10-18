@@ -77,13 +77,13 @@ public class StudentList {
                 new FileInputStream(DataFile)));
                 String alllines = studentlistall.readLine();
                 String words[] = alllines.split(",");
-                boolean done = false;
+                
                 String individaulstring = args[0].substring(1);
-                for(int indexlocation = 0; indexlocation<words.length && !done; indexlocation++)
+                for(int indexlocation = 0; indexlocation<words.length; indexlocation++)
                 {
                 if(words[indexlocation].equals(individaulstring)) {
                 System.out.println("Success");
-                done=true;
+                break;
                 }
             }
             }
