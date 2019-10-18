@@ -16,6 +16,7 @@ public class StudentList {
             System.out.println(Loading data ...);            
             try
             {
+				//Reader
                 BufferedReader studentlistall = new BufferedReader(
                 new InputStreamReader(
                 new FileInputStream(DataFile)));
@@ -90,7 +91,7 @@ public class StudentList {
             catch (Exception e)
             {}
             System.out.println(EndDialog);                
-        }
+        } //main method
         else if(args[0].contains(count))
         {
             System.out.println(Loading data ...);            
