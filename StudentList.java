@@ -13,7 +13,7 @@ public class StudentList {
 //        Check arguments
         if(args[0].equals("a"))
         {
-            System.out.println(StartDialog);            
+            System.out.println(Loading data ...);            
             try
             {
                 BufferedReader studentlistall = new BufferedReader(
@@ -32,7 +32,7 @@ public class StudentList {
         }
         else if(args[0].equals("r"))
         {
-            System.out.println(StartDialog);            
+            System.out.println(Loading data ...);            
             try
             {
                 BufferedReader studentlistall = new BufferedReader(
@@ -50,7 +50,7 @@ public class StudentList {
             System.out.println(EndDialog);            
         }
         else if(args[0].contains("+")){
-            System.out.println(StartDialog);            
+            System.out.println(Loading data ...);            
             try
             {
                 BufferedWriter studentlistall = new BufferedWriter(
@@ -69,7 +69,7 @@ public class StudentList {
         }
         else if(args[0].contains("?"))
         {
-            System.out.println(StartDialog);            
+            System.out.println(Loading data ...);            
             try
             {
                 BufferedReader studentlistall = new BufferedReader(
@@ -93,7 +93,7 @@ public class StudentList {
         }
         else if(args[0].contains("c"))
         {
-            System.out.println(StartDialog);            
+            System.out.println(Loading data ...);            
             try
             {
                 BufferedReader studentlistall = new BufferedReader(
