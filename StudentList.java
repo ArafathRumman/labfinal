@@ -11,7 +11,7 @@ public class StudentList {
             System.out.println("Usage: java StudentList a|r|c|?student1|+word");
         }
 //        Check arguments
-        if(args[0].equals("a"))
+        if(args[0].equals(ShowAll))
         {
             System.out.println(Loading data ...);            
             try
@@ -30,7 +30,7 @@ public class StudentList {
             {}
             System.out.println(EndDialog);
         }
-        else if(args[0].equals("r"))
+        else if(args[0].equals(ShowRandow))
         {
             System.out.println(Loading data ...);            
             try
@@ -49,7 +49,7 @@ public class StudentList {
             {}
             System.out.println(EndDialog);            
         }
-        else if(args[0].contains("+")){
+        else if(args[0].contains(addWord)){
             System.out.println(Loading data ...);            
             try
             {
@@ -57,7 +57,7 @@ public class StudentList {
                 new FileWriter(DataFile, true));
                 String individualstring = args[0].substring(1);
                 Date datenow = new Date();
-                String df = "dd/mm/yyyy-hh:mm:ss a";
+                String df = DateFormat;
                 DateFormat dateFormat = new SimpleDateFormat(df);
                 String fd= dateFormat.format(datenow);
                 studentlistall.write(", "+individualstring+"\nList last updated on "+fd);
@@ -67,7 +67,7 @@ public class StudentList {
             {}
             System.out.println(EndDialog);    
         }
-        else if(args[0].contains("?"))
+        else if(args[0].contains(query))
         {
             System.out.println(Loading data ...);            
             try
@@ -91,7 +91,7 @@ public class StudentList {
             {}
             System.out.println(EndDialog);                
         }
-        else if(args[0].contains("c"))
+        else if(args[0].contains(count))
         {
             System.out.println(Loading data ...);            
             try
