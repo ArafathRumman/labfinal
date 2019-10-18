@@ -6,6 +6,10 @@ public class StudentList {
 		{
 
 		/*Check arguments*/
+		if(args.length != 1)
+       {
+           System.out.println("Usage: java StudentList a|r|c|?student1|+word");
+       }
 		if(args[0].equals("a")) 
 		
 		{
