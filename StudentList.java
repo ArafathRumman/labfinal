@@ -109,7 +109,8 @@ public class StudentList {
             }
             catch (Exception e)
             {}
-            System.out.println(EndDialog);                
+            System.out.println(EndDialog);
+			
         }
     }
 }
