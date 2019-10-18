@@ -100,21 +100,12 @@ public class StudentList {
                 new InputStreamReader(
                 new FileInputStream(DataFile)));
                 String readlines = studentlistall.readLine();
+				String words[] = contents.split(",");
                 char charactararray[] = readlines.toCharArray();
-                boolean in_word = false;
-                int count=0;
-                for(char eachcharactar:charactararray)
-                {
-                if(eachcharactar ==' ')
-                {
-                if (!in_word) {    count++; in_word =true;    }
-                else
-                    {
-                        in_word=false;
-                    }
-                }
-            }
-            System.out.println(count +" word(s) found " + charactararray.length);
+             
+				System.out.println(count +" word(s) found " + array.length);
+			}
+            
             }
             catch (Exception e)
             {}
